@@ -1,4 +1,5 @@
 import { FaLocationDot } from "react-icons/fa6";
+import { AiOutlineDollar } from "react-icons/ai";
 
 const Job = ({ job }) => {
   const {
@@ -26,8 +27,8 @@ const Job = ({ job }) => {
             {job_type}
           </button>
         </div>
-        <div>
-          <h2 className="flex"><FaLocationDot className="text-2xl"></FaLocationDot>{location}</h2>
+        <div className="mt-4">
+          <h2 className="flex"><FaLocationDot className="text-2xl mr-2"></FaLocationDot>{location}</h2>
         </div>
         <div className="card-actions">
           <button className="btn btn-primary">View Details</button>
