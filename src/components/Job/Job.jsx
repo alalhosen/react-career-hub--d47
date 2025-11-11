@@ -27,8 +27,15 @@ const Job = ({ job }) => {
             {job_type}
           </button>
         </div>
-        <div className="mt-4">
-          <h2 className="flex"><FaLocationDot className="text-2xl mr-2"></FaLocationDot>{location}</h2>
+        <div className="mt-4 flex">
+          <h2 className="flex mr-4">
+            <FaLocationDot className="text-xl mr-2"></FaLocationDot>
+            {location}
+          </h2>
+          <h2 className="flex">
+            <AiOutlineDollar className="text-xl"></AiOutlineDollar> Salary :
+            {salary}
+          </h2>
         </div>
         <div className="card-actions">
           <button className="btn btn-primary">View Details</button>
