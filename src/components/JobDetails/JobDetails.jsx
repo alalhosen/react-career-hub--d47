@@ -4,7 +4,7 @@ const JobDetails = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
   const job = jobs.find((job) => job.id === id);
-  console.log(id, jobs);
+  console.log(jobs, id);
   return (
     <div>
       <h2>Job Details Of: </h2>
