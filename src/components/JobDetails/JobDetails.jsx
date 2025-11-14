@@ -8,7 +8,11 @@ const JobDetails = () => {
   console.log(jobs);
   return (
     <div>
-      <h2>Job Details Of: </h2>
+      <h2>Job Details Of: {id}</h2>
+      <div className="grid gap-4 md:grid-cols-4">
+        <div className="border md:col-span-3"></div>
+        <div className="border"></div>
+      </div>
     </div>
   );
 };
