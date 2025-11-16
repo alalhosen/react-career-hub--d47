@@ -8,14 +8,15 @@ const JobDetails = () => {
   console.log(jobs);
   return (
     <div>
-      <h2>Job Details Of: {id}</h2>
+      <h2>Job Details Of: {job.job_title}</h2>
       <div className="grid gap-4 md:grid-cols-4">
         <div className="border md:col-span-3">
           <h2 className="text-4xl">Details coming here</h2>
+          <p>{job.company_name}</p>
         </div>
         <div className="border">
           <h2 className="text-2xl">Side things</h2>
-          <button>Apply Now</button>
+          <button className="btn btn-primary w-full">Apply Now</button>
         </div>
       </div>
     </div>

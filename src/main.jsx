@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,    
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/job/:id",
         element: <JobDetails></JobDetails>,
-        loader:()=>fetch('../jobs.json')
+        loader: () => fetch("../jobs.json"), // do not load all data. load only what you need
       },
     ],
   },
