@@ -7,7 +7,8 @@ const AppliedJobs = () => {
   useEffect(() => {
     const storedJobIds = getStoredJobApplication();
     if (jobs.length > 0) {
-        const jobsApplied=jobs.filter(job=>)
+        const jobsApplied=jobs.filter(job=>storedJobIds.includes(job.id))
+        console.log(jobsApplied)
     }
   });
 
